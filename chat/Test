@@ -1,0 +1,8 @@
+from user.models import User
+from message.models import Message
+from chats_group.models import ChatGroup
+user = User.objects.get(pk=1)
+mess = Message.objects.get(pk=1)
+chats_group = ChatGroup.objects.get(pk=1)
+
+chats_group= ChatGroup.objects.create(name = "Treq",password = "1234",user_created = user)
