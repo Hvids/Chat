@@ -25,7 +25,9 @@ SECRET_KEY = '54-j*#m$@3#$n8301(es%w8!5n!!=s169&_aj3e0o4us05si^*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'h49680.hostru03.fornex.org',
+    '127.0.0.1']
 
 
 # Application definition
@@ -152,9 +154,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 import os
-# STATIC_ROOT = '/home/h49680/public_html/hvidsmen.com/static/
-# STATIC_ROOT = 'static'
+# STATIC_ROOT = '/home/h49680/public_html/hvidsmen.com/static'
+STATIC_ROOT = 'static'
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-]

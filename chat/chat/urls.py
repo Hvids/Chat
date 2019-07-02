@@ -33,4 +33,4 @@ urlpatterns = [
     path('api_v1/', include('chats_group.urls')),
     path('api_v1/',include('message.urls')),
     path('',include('project.urls'))
-]  #+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 
+]  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 
