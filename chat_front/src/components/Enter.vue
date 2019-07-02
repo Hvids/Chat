@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h4>Ввойдите</h4>
+          <h4>Войдите</h4>
         </div>
       </div>
       <div class="row">
@@ -34,7 +34,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <router-link :to="{ name: 'Register' }">Регистация</router-link>
+          <router-link :to="{ name: 'Register' }">Регистрация</router-link>
         </div>
       </div>
     </div>

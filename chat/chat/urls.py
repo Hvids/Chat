@@ -19,6 +19,8 @@ from rest_framework import routers
 from user.viewsets import UserViewSet
 from chats_group.viewsets import ChatGroupViewSet
 from message.viewsets import MessageViewSet
+from django.conf import settings
+from django.conf.urls.static import static
 
 router = routers.DefaultRouter()
 router.register('users',UserViewSet)
@@ -31,4 +33,4 @@ urlpatterns = [
     path('api_v1/', include('chats_group.urls')),
     path('api_v1/',include('message.urls')),
     path('',include('project.urls'))
-]
+]  #+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 
