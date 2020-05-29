@@ -3,8 +3,8 @@ Chat со всеми прилагающими
 Тут лежит чат написанный c использованием:
 
 **backend**:
-*django 
+* django 
 
 **frontend**:
-*html/css
-*vuejs
+* html/css
+* vuejs
